@@ -52,7 +52,7 @@ Vagrant.configure("2") do |config|
   config.vm.provider :aws do |aws, override|
     aws.access_key_id = "CHANGE-ME"
     aws.secret_access_key = "CHANGE-ME"
-    aws.keypair_name = "DevPOC-JWTVDev"
+    aws.keypair_name = "mykey"
     aws.ami = "ami-8cb8e7e4"
     aws.instance_type = "t2.micro"
     aws.security_groups = ["sg-5cdf0938"]
