@@ -100,5 +100,6 @@ Now at the ec2 instance enter the following command to mount the local file syst
 ```
 sshfs -o port=8089 asilva@localhost:/Users/asilva/Documents/bethel-aws/ /home/ubuntu/test
 ```
+You will be prompted for you password. This is the password on the local computer. 
 
 Now if you navigate to /home/ubuntu/test on the ec2 instance the contents of that directory will be target directory on the local computer. This would allow a developer to change files locally on their computer and immediately reload the service on the ec2 instance to test the changes. 
